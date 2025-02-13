@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brancoFonte: #ffffff;
+    --corPrincipal: #3772FF;
+    --corSecundaria: #FC7071;
+    --corHover: #FF9D9E;
+    --corTerciaria: #36D6AD;
+    --corQuarta: #F6F6F6;
+    --fontePrincipal: "Poppins", sans-serif;
+}
+
+.cadastrar {
+    font-family: var(--fontePrincipal);
+    background-color: var(--brancoFonte);
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 93% 7%;
+    height: 100vh;
+    
+}
+
+.patas {
+    grid-column: 3 / 4;
+    grid-row: 1 / -4;
+    align-self: flex-start;
+    justify-self: end;
+
+}
+
+.homeCadastrar {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    color: var(--corPrincipal);
+
+}
+
+.imgAdopet {
+
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.cadastroP1 {
+
+    font-size: 1.125rem;
+    margin-top: 5%;
+    
+
+}
+.cadastroP2 {
+
+    font-size: 1.125rem;
+    margin: 5% 15% 5% 15%;
+
+}
+
+.secundario {
+    grid-column: 1 / 4;
+    grid-row: 2 / -3;
+    background-color: var(--corTerciaria);
+    height: 7vh;
+    width: 100%;
+    flex-shrink: 0;
+    font-weight: 400;
+    
+}
+
+.cadastrarQuestions {
+    text-align: center;
+    list-style-type: none;
+}
+
+.inputs {
+    width: 70%;
+    background-color: var(--corQuarta);
+
+}
