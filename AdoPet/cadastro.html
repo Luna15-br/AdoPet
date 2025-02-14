@@ -11,7 +11,7 @@
     <header class="cabecalho cabecalho">
         <nav class="cabecalhoConteudo">
             <a class="cabecalhoConteudoAdopet" href="/AdoPet/index.html"><img src="sheet/Logo.svg" class="imgHomeAdopet"></a>
-            <a class="cabecalhoConteudoHome" href="#"><img src="/AdoPet/sheet/Casa.svg" class="imgHomeCasa"></a>
+            <a class="cabecalhoConteudoHome" href="/AdoPet/index.html"><img src="/AdoPet/sheet/Casa.svg" class="imgHomeCasa"></a>
             <a class="cabecalhoConteudoMsn" href="#"><img src="/AdoPet/sheet/Mensagens.svg" class="imgHomeMsn"></a>
         </nav>
     </header>
@@ -19,20 +19,29 @@
         <img src="/AdoPet/sheetCadastro/Logo.svg" alt="logo adopet" class="imgAdopet">
         <p class="cadastroP1">Ainda não tem cadastro?</p>
         <p class="cadastroP2">Então, antes de buscar seu melhor amigo, precisamos de alguns dados</p>
-        <div class="cadastrarQuestions">
-            <lo class="inputs">
-                <li>Nome</li>
-                <input type="text">
-                <li>E-mail</li>
-                <input type="email">
-                <li>Senha</li>
-                <input type="password">
-                <li>Confirme sua senha</li>
-                <input type="password">     
-            </lo>
-
-
-        </div>
+        <section class="teste">
+            <form action="/enviar-dados" method="POST">
+                    <div class="singleInput">
+                        <input required type="text" name="" id="nome" class="input">
+                        <label for="nome">Nome</label>
+                    </div>
+                    <div class="singleInput">
+                        <input required type="email" name="" id="email" class="input">
+                        <label for="email">E-mail</label>
+                    </div>
+                    <div class="singleInputSenha">
+                        <input required type="password" name="" id="senha" class="input">
+                        <label for="senha">Senha</label>                 
+                    </div>
+                    <div class="singleInputSenha">
+                        <input required type="password" name="" id="confirmeSenha" class="input">
+                        <label for="confirmeSenha">Confirme sua senha</label>    
+                    </div>
+                    <div class="enviarCadastro">
+                        <button type="submit" class="submitButton">Cadastrar!</button>
+                    </div>
+            </form> 
+        </section>
     </main>
     <div class="patas">
         <img src="/AdoPet/sheetCadastro/Patas.png" alt="patinhas de animais" class="imgPatas">

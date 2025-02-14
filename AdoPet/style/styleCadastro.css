@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--fontePrincipal);
 }
 
 :root {
@@ -11,6 +12,7 @@
     --corHover: #FF9D9E;
     --corTerciaria: #36D6AD;
     --corQuarta: #F6F6F6;
+    --corFundo: #BCBCBC;
     --fontePrincipal: "Poppins", sans-serif;
 }
 
@@ -34,26 +36,28 @@
 .homeCadastrar {
 
     display: flex;
+    
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    height: 50vh;
+    height: 100vh;
     color: var(--corPrincipal);
 
 }
 
 .imgAdopet {
 
-    width: 45%;
+    width: 60%;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5%;
+    margin-top: 10%;
+    
 }
 
 .cadastroP1 {
 
     font-size: 1.125rem;
-    margin-top: 5%;
+    
     
 
 }
@@ -61,6 +65,7 @@
 
     font-size: 1.125rem;
     margin: 5% 15% 5% 15%;
+    text-align: center;
 
 }
 
@@ -74,14 +79,111 @@
     font-weight: 400;
     
 }
+.teste {
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
 
-.cadastrarQuestions {
-    text-align: center;
-    list-style-type: none;
+
 }
 
-.inputs {
-    width: 70%;
-    background-color: var(--corQuarta);
+.form {
+   width: 100%;
+   
+   
+    
+}
 
+.input {
+    width: 100%;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 2%;
+    margin-bottom: 5%;
+    background-color: var(--corQuarta);
+    border: 1px solid var(--corPrincipal);
+    box-shadow: 4px 4px 10px var(--corFundo);
+    border: 0;
+    border-bottom: 2px solid var(--corPrincipal);
+    outline: 0;
+    font-size: 1rem;
+    
+    
+}
+.input:focus, .input:valid {
+    border-bottom: 2px solid var(--corTerciaria);
+    
+
+}
+
+.singleInput {
+    width: 100%;
+    position: relative;
+    
+    
+    
+}
+
+.singleInputSenha {
+    width: 70%;
+    margin: 2% 15%; 
+    position: relative;
+    
+    
+    
+}
+
+.singleInput label, 
+.singleInputSenha label {
+    text-align: center;
+    position: absolute;
+    left: 10px; 
+    top: 35%;
+    transform: translateY(-50%);
+    font-size: 0.75rem;
+    color: #3772FF;
+    transition: all 0.3s ease-in-out;
+    cursor: text;
+    
+    
+}
+
+.input:focus ~ label, 
+.input:valid ~ label {
+    transform: translateY(-3.125rem);
+    font-size: 0.75rem;
+    color: var(--corTerciaria);
+    
+
+}
+
+.enviarCadastro {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+
+}
+
+.submitButton {
+    
+    width: 30%;
+    padding: 2%;
+    border-radius: 0.6rem;
+    border: 0px solid transparent;
+    background-color: var(--corSecundaria);
+    color: var(--brancoFonte);
+    font-size: 1.125rem;
+    text-decoration: none;
+    box-shadow: 4px 4px 10px var(--corFundo);
+
+
+}
+.submitButton:hover {
+    background-color: var(--corHover);
+    cursor: pointer;
+    
 }
